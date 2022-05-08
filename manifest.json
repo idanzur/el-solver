@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "el solverr",
+  "description": "solver for wordle like puzzles",
+  "version": "1.0",
+  "permissions": ["tabs"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["solver.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.nytimes.com/games/wordle/index.html",
+        "https://www.milel.co/*",
+        "https://jackli.gg/chessle/*",
+        "https://worldle.teuteuf.fr/*",
+        "https://oec.world/en/tradle/*",
+        "https://sardle.net/*",
+        "https://semantle.novalis.org/*",
+        "https://www.sedecordle.com/*",
+        "https://xordle.xyz/*",
+        "https://www.redactle.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
