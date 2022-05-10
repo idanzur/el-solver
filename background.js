@@ -8,7 +8,8 @@ const activeTabs = [
     "https://semantle.novalis.org/",
     "https://www.sedecordle.com/",
     "https://xordle.xyz/",
-    "https://www.redactle.com/"
+    "https://www.redactle.com/",
+    "https://wordleheb.web.app/"
 ];
 
 const icons = {
