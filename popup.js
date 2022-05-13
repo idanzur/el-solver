@@ -6,3 +6,8 @@ chrome.tabs.query({ active: true, currentWindow: true }).then(tabs => {
         chrome.tabs.sendMessage(tab.id, { solve: true }, (response) => { });
     });
 });
+
+document.querySelector("#next").addEventListener("click", () => {
+    const url = websites[Math.floor(Math.random() * websites.length)].url;
+    chrome.tabs.update(undefined, { url });
+})
