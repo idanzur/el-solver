@@ -1,7 +1,8 @@
 chrome.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
+    (request, sender, sendResponse) => {
         if (request.solver) {
             injectSolver(request.solver);
+            sendResponse({ solved: true })
         }
     }
 );
@@ -9,8 +10,8 @@ chrome.runtime.onMessage.addListener(
 const injectSolver = solver => {
     const s = document.createElement("script");
     s.src = chrome.runtime.getURL(`solvers/${solver}.js`);
-    s.onload = function () { 
-        this.remove(); 
+    s.onload = function () {
+        this.remove();
     };
     (document.head || document.documentElement).appendChild(s);
 }
