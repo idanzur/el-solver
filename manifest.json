@@ -33,7 +33,8 @@
         "https://www.redactle.com/*",
         "https://wordleheb.web.app/*",
         "https://degle.ishefi.com/*",
-        "https://flagle.ishefi.com/*"
+        "https://flagle.ishefi.com/*",
+        "https://www.undergroundle.co.uk/*"
       ],
       "js": ["content.js"]
     }

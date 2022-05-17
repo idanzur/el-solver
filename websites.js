@@ -12,6 +12,7 @@ const websites = [
     { url: 'https://xordle.xyz/', solver: 'xordle' },
     { url: 'https://www.redactle.com/', solver: 'redactle' },
     { url: 'https://wordleheb.web.app/', solver: 'wordleheb' },
+    { url: 'https://www.undergroundle.co.uk/', solver: 'undergroundle' },
 ]
 
 const getWebsite = _url => websites.find(({ url }) => _url.startsWith(url));
