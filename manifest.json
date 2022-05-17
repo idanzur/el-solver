@@ -31,7 +31,9 @@
         "https://www.sedecordle.com/*",
         "https://xordle.xyz/*",
         "https://www.redactle.com/*",
-        "https://wordleheb.web.app/*"
+        "https://wordleheb.web.app/*",
+        "https://degle.ishefi.com/*",
+        "https://flagle.ishefi.com/*"
       ],
       "js": ["content.js"]
     }

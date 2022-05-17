@@ -3,6 +3,8 @@ const websites = [
     { url: 'https://www.milel.co/', solver: 'milel' },
     { url: 'https://jackli.gg/chessle/', solver: 'chessle' },
     { url: 'https://worldle.teuteuf.fr/', solver: 'worldle' },
+    { url: 'https://degle.ishefi.com/', solver: 'degle' },
+    { url: 'https://flagle.ishefi.com/', solver: 'degle' },
     { url: 'https://oec.world/en/tradle/', solver: 'tradle' },
     { url: 'https://sardle.net/', solver: 'sardle' },
     { url: 'https://semantle.com/', solver: 'semantle' },
