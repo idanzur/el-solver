@@ -5,7 +5,9 @@ const icons = {
     disabled: 'icons/icon16-gray.png'
 }
 
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, { url }) => {
+const api = chrome || browser;
+
+api.tabs.onUpdated.addListener((tabId, changeInfo, { url }) => {
     const path = getWebsite(url) ? icons.enabled : icons.disabled;
-    chrome.action.setIcon({ path, tabId });
+    (api.action || api.browserAction).setIcon({ path, tabId });
 })
