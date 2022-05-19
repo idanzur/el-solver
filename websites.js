@@ -1,4 +1,5 @@
 const websites = [
+    { url: 'https://meduyeket.net/', solver: 'meduyeket' },
     { url: 'https://www.nytimes.com/games/wordle/index.html', solver: 'wordle' },
     { url: 'https://www.milel.co/', solver: 'milel' },
     { url: 'https://jackli.gg/chessle/', solver: 'chessle' },

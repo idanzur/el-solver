@@ -3,7 +3,9 @@
   "name": "el solverr",
   "description": "solver for wordle like puzzles",
   "version": "1.0",
-  "permissions": ["tabs"],
+  "permissions": [
+    "tabs"
+  ],
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -11,8 +13,12 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["solvers/*"],
-      "matches": ["<all_urls>"]
+      "resources": [
+        "solvers/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
     }
   ],
   "background": {
@@ -34,9 +40,12 @@
         "https://wordleheb.web.app/*",
         "https://degle.ishefi.com/*",
         "https://flagle.ishefi.com/*",
-        "https://www.undergroundle.co.uk/*"
+        "https://www.undergroundle.co.uk/*",
+        "https://meduyeket.net/*"
       ],
-      "js": ["content.js"]
+      "js": [
+        "content.js"
+      ]
     }
   ],
   "action": {
