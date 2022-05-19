@@ -12,6 +12,7 @@ if ! [[ $1 =~ ^http://.*|https://.* ]]; then
 fi
 
 sed -i "1 a \    { url: '$1', solver: '$2' }," websites.js
+sed -i "4 a * $1" README.md
 
 touch solvers/$2.js
 
