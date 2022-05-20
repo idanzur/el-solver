@@ -1,2 +1,3 @@
-for (c of [...word, "הכנס"])
-    document.querySelector(`[data-key='${c}']`).click();
+[...word, "הכנס"].forEach(c => 
+    document.querySelector(`[data-key='${c}']`).click()
+);

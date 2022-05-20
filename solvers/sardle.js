@@ -1,1 +1,1 @@
-submit_guess(S.secret.name)
+submit_guess(S.secret.name);
