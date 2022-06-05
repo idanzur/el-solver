@@ -1,4 +1,7 @@
 (async () => {
-    document.querySelector("#userGuess").value = atob((await (await fetch("/ses.php")).json()).article);
-    document.querySelector("#submitGuess").click();
+    const answer = atob((await (await fetch("/ses.php")).json()).article);
+    answer.split("_").forEach(word => {
+        document.querySelector("#userGuess").value = word;
+        document.querySelector("#submitGuess").click();
+    });
 })();
