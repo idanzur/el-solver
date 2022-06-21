@@ -5,7 +5,7 @@ api.tabs.query({ active: true, currentWindow: true }).then(tabs => {
     const website = getWebsite(tab.url);
     solveButton.style.display = website ? 'block' : 'none';
     solveButton.addEventListener('click', () => {
-        api.tabs.sendMessage(tab.id, { solver: website.solver }, (response) => { });
+        api.tabs.sendMessage(tab.id, website, (response) => { });
     });
 });
 

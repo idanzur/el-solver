@@ -14,7 +14,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "solvers/*"
+        "solvers/*",
+        "utils/*"
       ],
       "matches": [
         "<all_urls>"

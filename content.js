@@ -1,10 +1,16 @@
 const api = chrome || browser;
-api.runtime.onMessage.addListener(({ solver }, sender, sendResponse) => {
+
+const loadAsset = url => {
+    const s = document.createElement('script');
+    s.src = api.runtime.getURL(url);
+    s.onload = function () { this.remove(); };
+    (document.head || document.documentElement).appendChild(s);
+}
+
+api.runtime.onMessage.addListener(({ solver, utils = [] }, sender, sendResponse) => {
     if (solver) {
-        const s = document.createElement('script');
-        s.src = api.runtime.getURL(`solvers/${solver}.js`);
-        s.onload = function () { this.remove(); };
-        (document.head || document.documentElement).appendChild(s);
-        sendResponse({ solved: true })
+        utils.forEach(util => loadAsset(`utils/${util}.js`));
+        loadAsset(`solvers/${solver}.js`);
+        sendResponse({ solved: true });
     }
 });

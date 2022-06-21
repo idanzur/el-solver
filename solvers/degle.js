@@ -1,18 +1,3 @@
-const readFileFromSourceMap = async (url, name) => {
-	const data = await (await fetch(`${url}.map`)).json();
-	const index = data.sources.findIndex(file => file.endsWith(name));
-	return data.sourcesContent[index];
-}
-
-const inputCountryAnswer = (country) => {
-	const el = document.querySelector('input');
-	Object.getOwnPropertyDescriptor(Object.getPrototypeOf(el), 'value').set.call(el, country);
-	el.dispatchEvent(new Event('input', {
-		bubbles: true
-	}));
-}
-
-
 (async () => {
     const data = await readFileFromSourceMap(document.querySelectorAll("script[defer]")[1].src, "countries.position.ts");
     const jsObject = data
