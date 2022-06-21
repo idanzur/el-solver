@@ -37,7 +37,8 @@
         "https://degle.ishefi.com/*",
         "https://flagle.ishefi.com/*",
         "https://www.undergroundle.co.uk/*",
-        "https://meduyeket.net/*"
+        "https://meduyeket.net/*",
+        "https://converged.yt/primel/*"
       ],
       "js": [
         "content.js"
