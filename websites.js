@@ -6,7 +6,6 @@ const websites = [
     { url: 'https://jackli.gg/chessle/', solver: 'chessle' },
     { url: 'https://worldle.teuteuf.fr/', solver: 'worldle', utils: ['inputCountryAnswer'] },
     { url: 'https://degle.ishefi.com/', solver: 'degle', utils: ['readFileFromSourceMap', 'inputCountryAnswer'] },
-    { url: 'https://flagle.ishefi.com/', solver: 'degle', utils: ['readFileFromSourceMap', 'inputCountryAnswer'] },
     { url: 'https://oec.world/en/tradle/', solver: 'tradle', utils: ['inputCountryAnswer'] },
     { url: 'https://sardle.net/', solver: 'sardle' },
     { url: 'https://semantle.com/', solver: 'semantle' },
