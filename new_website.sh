@@ -6,7 +6,7 @@ if [[ $# -ne 2 ]]; then
     exit 1
 fi
 
-if ! [[ $1 =~ ^http://.*|https://.* ]]; then
+if ! [[ $1 =~ ^https?://.* ]]; then
     echo "First argument should be a url"
     exit 1
 fi
