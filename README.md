@@ -9,7 +9,6 @@ chrome extension and firefox add-on that solves for you `wordle` like games
 * https://jackli.gg/chessle/
 * https://worldle.teuteuf.fr/
 * https://degle.ishefi.com/
-* https://flagle.ishefi.com/
 * https://oec.world/en/tradle/
 * https://sardle.net/
 * https://semantle.com/
