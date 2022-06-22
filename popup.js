@@ -15,4 +15,4 @@ document.querySelector('#next').addEventListener('click', () => {
     localStorage.setItem('lastVisit', index);
     api.tabs.update(undefined, { url });
     window.close();
-})
+});

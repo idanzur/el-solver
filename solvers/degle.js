@@ -11,4 +11,3 @@
     inputCountryAnswer(country.name);
     document.querySelector('button[type=submit]').click();
 })();
-
