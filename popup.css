@@ -1,6 +1,11 @@
+:root {
+    --item-width: 130px;
+    --item-margin: 0.5em
+}
+
 .main {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: var(--item-margin);
+    margin-bottom: var(--item-margin);
     padding: 0;
     min-width: 150px;
     display: flex;
@@ -13,8 +18,13 @@ body {
 }
 
 button {
-    width: 130px;
+    width: var(--item-width);
 }
-button#solve {
-    margin-top: 0.5em;
+
+button {
+    margin-top: var(--item-margin);
+}
+
+select {
+    width: var(--item-width);
 }

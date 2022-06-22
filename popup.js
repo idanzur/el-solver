@@ -1,4 +1,5 @@
 const api = typeof browser === 'undefined' ? chrome : browser;
+
 api.tabs.query({ active: true, currentWindow: true }).then(tabs => {
     const tab = tabs[0];
     const solveButton = document.querySelector('#solve');
@@ -9,8 +10,15 @@ api.tabs.query({ active: true, currentWindow: true }).then(tabs => {
     });
 });
 
+const selectNext = document.getElementById('select-next');
+websites.forEach(({ solver }, i) => {
+    selectNext.options.add(new Option(solver, i));
+});
+
 document.querySelector('#next').addEventListener('click', () => {
-    const index = (parseInt(localStorage.lastVisit) + 1) % websites.length || 0;
+    const index = selectNext.selectedIndex ?
+        selectNext.value :
+        (parseInt(localStorage.lastVisit) + 1) % websites.length || 0;
     const url = websites[index].url;
     localStorage.setItem('lastVisit', index);
     api.tabs.update(undefined, { url });
