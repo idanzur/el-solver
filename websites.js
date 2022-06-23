@@ -4,7 +4,7 @@ const websites = [
     { url: 'https://www.nytimes.com/games/wordle/index.html', solver: 'wordle', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.milel.co/', solver: 'milel' },
     { url: 'https://jackli.gg/chessle/', solver: 'chessle' },
-    { url: 'https://worldle.teuteuf.fr/', solver: 'worldle', utils: ['inputCountryAnswer'] },
+    { url: 'https://worldle.teuteuf.fr/', solver: 'worldle', utils: ['readFileFromSourceMap', 'inputCountryAnswer'] },
     { url: 'https://degle.ishefi.com/', solver: 'degle', utils: ['readFileFromSourceMap', 'inputCountryAnswer'] },
     { url: 'https://oec.world/en/tradle/', solver: 'tradle', utils: ['inputCountryAnswer'] },
     { url: 'https://sardle.net/', solver: 'sardle' },
