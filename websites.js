@@ -12,7 +12,7 @@ const websites = [
     { url: 'https://www.sedecordle.com/', solver: 'sedecordle' },
     { url: 'https://xordle.xyz/', solver: 'xordle', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.redactle.com/', solver: 'redactle' },
-    { url: 'https://wordleheb.web.app/', solver: 'wordleheb', utils: ['readFileFromSourceMap'] },
+    { url: 'https://www.haaretz.co.il/riddles/ty-page/haaretz-wordle/index.html', solver: 'wordleheb', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.undergroundle.co.uk/', solver: 'undergroundle' },
 ]
 
