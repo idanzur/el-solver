@@ -42,7 +42,8 @@
         "https://degle.ishefi.com/*",
         "https://www.undergroundle.co.uk/*",
         "https://meduyeket.net/*",
-        "https://converged.yt/primel/*"
+        "https://converged.yt/primel/*",
+        "https://www.mathler.com/*"
       ],
       "js": [
         "content.js"

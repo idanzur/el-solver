@@ -2,6 +2,7 @@
 chrome extension and firefox add-on that solves for you `wordle` like games
 
 ## supported websites
+* https://www.mathler.com/
 * https://converged.yt/primel/
 * https://meduyeket.net/
 * https://www.nytimes.com/games/wordle/index.html
