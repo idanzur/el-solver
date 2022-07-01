@@ -1,4 +1,5 @@
 const websites = [
+    { url: 'https://hard.mathler.com/', solver: 'hard-mathler', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.mathler.com/', solver: 'mathler', utils: ['readFileFromSourceMap'] },
     { url: 'https://converged.yt/primel/', solver: 'primel', utils: ['readFileFromSourceMap'] },
     { url: 'https://meduyeket.net/', solver: 'meduyeket' },

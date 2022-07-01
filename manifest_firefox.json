@@ -39,7 +39,8 @@
         "https://www.undergroundle.co.uk/*",
         "https://meduyeket.net/*",
         "https://converged.yt/primel/*",
-        "https://www.mathler.com/*"
+        "https://www.mathler.com/*",
+        "https://hard.mathler.com/*"
       ],
       "js": [
         "content.js"
