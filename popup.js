@@ -11,8 +11,8 @@ api.tabs.query({ active: true, currentWindow: true }).then(tabs => {
 });
 
 const selectNext = document.getElementById('select-next');
-websites.forEach(({ solver }, i) => {
-    selectNext.options.add(new Option(solver, i));
+websites.forEach(({ solver, name }, i) => {
+    selectNext.options.add(new Option(name || solver, i));
 });
 
 document.querySelector('#next').addEventListener('click', () => {
