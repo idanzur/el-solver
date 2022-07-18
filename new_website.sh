@@ -11,8 +11,11 @@ if ! [[ $1 =~ ^https?://.* ]]; then
     exit 1
 fi
 
-sed -i "1 a \    { url: '$1', solver: '$2' }," websites.js
 sed -i "4 a * $1" README.md
+
+cd src/
+
+sed -i "1 a \    { url: '$1', solver: '$2' }," websites.js
 
 touch solvers/$2.js
 
