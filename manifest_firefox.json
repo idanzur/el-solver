@@ -40,7 +40,8 @@
         "https://meduyeket.net/*",
         "https://converged.yt/primel/*",
         "https://www.mathler.com/*",
-        "https://hard.mathler.com/*"
+        "https://hard.mathler.com/*",
+        "https://emovi.teuteuf.fr/*"
       ],
       "js": [
         "content.js"

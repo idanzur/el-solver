@@ -1,4 +1,5 @@
 const websites = [
+    { url: 'https://emovi.teuteuf.fr/', solver: 'emovi', utils: ['readFileFromSourceMap', 'inputCountryAnswer'] },
     { url: 'https://hard.mathler.com/', solver: 'hard-mathler', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.mathler.com/', solver: 'mathler', utils: ['readFileFromSourceMap'] },
     { url: 'https://converged.yt/primel/', solver: 'primel', utils: ['readFileFromSourceMap'] },
