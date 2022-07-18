@@ -17,5 +17,7 @@ const websites = [
     { url: 'https://www.haaretz.co.il/riddles/ty-page/haaretz-wordle/index.html', solver: 'wordleheb', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.undergroundle.co.uk/', solver: 'undergroundle' },
 ]
+    .map((value, index) => ({ ...value, index }))
+    .sort((a, b) => (a.name || a.solver) > (b.name || b.solver) ? 1 : -1);
 
 const getWebsite = _url => websites.find(({ url }) => _url.startsWith(url));
