@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "el solverr",
+  "name": "el solver",
   "description": "solver for wordle like puzzles",
   "version": "1.0",
   "permissions": [
