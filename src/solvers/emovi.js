@@ -1,5 +1,5 @@
 (async () => {
-    const url = document.querySelector('script').src;
+    const url = document.querySelector('script[defer]').src;
     const appFile = await readFileFromSourceMap(url, 'App.tsx');
     const today = new Date().toISOString().split('T')[0];
     const movieId = new RegExp(`"${today}":.*?id:\\s*"(.*?)"`).exec(appFile)[1];
