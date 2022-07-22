@@ -3,7 +3,7 @@ const websites = [
     { url: 'https://hard.mathler.com/', solver: 'hard-mathler', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.mathler.com/', solver: 'mathler', utils: ['readFileFromSourceMap'] },
     { url: 'https://converged.yt/primel/', solver: 'primel', utils: ['readFileFromSourceMap'] },
-    { url: 'https://meduyeket.net/', solver: 'meduyeket' },
+    { url: 'https://www.haaretz.co.il/riddles/ty-page/meduyeket/index.html', solver: 'meduyeket' },
     { url: 'https://www.nytimes.com/games/wordle/index.html', solver: 'wordle', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.milel.co/', solver: 'milel' },
     { url: 'https://jackli.gg/chessle/', solver: 'chessle' },
