@@ -2,10 +2,8 @@
 (async () => {
     const jsUrl = document.querySelector('link[rel=stylesheet]').href.replace(/\.css$/, '.js');
     const data = await (await fetch(jsUrl)).text();
-    const answers = JSON.parse(/\["cigar".*?]/.exec(data)[0]);
-    const today = new Date();
-    const start = new Date('2021-06-18');
-    const index = Math.round(Math.abs((today - start) / 86400000)) - 1;
-    const answer = answers[index];
+    const words = JSON.parse(/\["cigar".*?]/.exec(data)[0]);
+    const index = Math.round((new Date().setHours(0, 0, 0, 0) - 1624050000000) / 86400000)
+    const answer = words[index];
     [...answer,  '↵'].forEach( c => document.querySelector(`[data-key='${c}']`).click());
 })();
