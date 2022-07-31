@@ -41,7 +41,8 @@
         "https://converged.yt/primel/*",
         "https://www.mathler.com/*",
         "https://hard.mathler.com/*",
-        "https://emovi.teuteuf.fr/*"
+        "https://emovi.teuteuf.fr/*",
+        "https://wordle.at/*"
       ],
       "js": [
         "content.js"
