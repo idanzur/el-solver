@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "el solver",
   "description": "solver for wordle like puzzles",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "permissions": [
     "tabs",
     "activeTab"
