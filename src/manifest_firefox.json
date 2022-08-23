@@ -42,7 +42,8 @@
         "https://www.mathler.com/*",
         "https://hard.mathler.com/*",
         "https://emovi.teuteuf.fr/*",
-        "https://wordle.at/*"
+        "https://wordle.at/*",
+        "https://ducc.pythonanywhere.com/flaggle/*"
       ],
       "js": [
         "content.js"

@@ -2,6 +2,7 @@
 [chrome extension](https://chrome.google.com/webstore/detail/el-solver/nmpfjleimkaekkpegjjpigbbmooicojn) and [firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/el-solver/) that solves for you `wordle` like games
 
 ## supported websites
+* https://ducc.pythonanywhere.com/flaggle/
 * https://wordle.at/
 * https://emovi.teuteuf.fr/
 * https://hard.mathler.com/
