@@ -16,7 +16,7 @@ const websites = [
     { url: 'https://www.sedecordle.com/', solver: 'sedecordle' },
     { url: 'https://xordle.org/', solver: 'xordle', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.redactle.com/', solver: 'redactle' },
-    { url: 'https://www.haaretz.co.il/riddles/ty-page/haaretz-wordle/index.html', solver: 'wordleheb', utils: ['readFileFromSourceMap'] },
+    { url: 'https://www.haaretz.co.il/riddles/ty-page/haaretz-wordle', solver: 'wordleheb', utils: ['readFileFromSourceMap'] },
     { url: 'https://www.undergroundle.co.uk/', solver: 'undergroundle' },
 ]
     .map((value, index) => ({ ...value, index }))
