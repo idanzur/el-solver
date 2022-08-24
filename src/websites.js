@@ -1,4 +1,5 @@
 const websites = [
+    { url: 'https://www.lewdlegame.com/App', solver: 'lewdle' },
     { url: 'https://ducc.pythonanywhere.com/flaggle/', solver: 'flaggle' },
     { url: 'https://wordle.at/', name: "wördl", solver: 'german-wordle' },
     { url: 'https://emovi.teuteuf.fr/', solver: 'emovi', utils: ['readFileFromSourceMap', 'inputCountryAnswer'] },
