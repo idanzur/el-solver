@@ -1,13 +1,9 @@
 (async () => {
-    const data = await readFileFromSourceMap(document.querySelectorAll("script[defer]")[1].src, "countries.position.ts");
-    const jsObject = data
-        .split("=")[1]
-        .replace(',\n];', ']')
-        .replace(/(\w+):/g, '"$1":')
-        .replace(/,\n  }/g, '}');
-    const countries = JSON.parse(jsObject);
+    const promises = Array.from(document.querySelectorAll('script[defer]'))
+        .map(({src}) => readFileFromSourceMap(src, "countries.position.ts"));
+    const data = (await Promise.all(promises)).find(data => data);
     const countryCode = /\/([a-z]{2})\//.exec(document.querySelector('img[alt="country to guess"]').src)[1].toUpperCase();
-    const country = countries.find(c => c.code === countryCode)
-    inputCountryAnswer(country.name);
+    const country = new RegExp(`code:\\s*"${countryCode}".*?name:\\s*"(.*?)"`, 's').exec(data)[1]
+    inputCountryAnswer(country);
     document.querySelector('button[type=submit]').click();
 })();
