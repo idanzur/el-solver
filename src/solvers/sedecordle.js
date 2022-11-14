@@ -1,3 +1,3 @@
 answer.forEach(a => {
-    [...a, "enter1"].forEach(c => document.querySelector(`#${c}`).click());
+    [...a, "enter1"].forEach(c => document.getElementById(c).click());
 });

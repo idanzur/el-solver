@@ -7,7 +7,7 @@
     const yyyy = today.getFullYear();
     const movieId = new RegExp(`"${yyyy}-${mm}-${dd}":.*?id:\\s*"(.*?)"`, 's').exec(appFile)[1];
     const moviesFile = await readFileFromSourceMap(url, 'movies.ts');
-    const answer = new RegExp(`${movieId}(?:.|\\n)*?title:\\s*"(.*?)"`).exec(moviesFile)[1]
+    const answer = new RegExp(`${movieId}.*?title:.*?"(.*?)"`, 's').exec(moviesFile)[1]
     inputCountryAnswer(answer);
     document.querySelectorAll('*[id^="react-select-2-option"]')[0].click();
     setTimeout(() => document.querySelector('button').click(), 0);
